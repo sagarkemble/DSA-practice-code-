@@ -1,16 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=5;
-    int min;
+
+    int n;
+    cout<<"enter size of array"<<endl;
+    cin>>n;
     int arr[n];
     
 
     for (int i = 0; i < n; i++)
     {
+        cout<<"enter element in "<<i+1<<" index"<<endl;
         cin>>arr[i];
     }
 
+    cout<<endl<<"unsorted array"<<endl;
     for (int i = 0; i < n; i++)
     {
         cout<<arr[i]<<' ';
@@ -29,6 +33,7 @@ int main(){
         }
         
     }
+    cout<<endl<<"sorted array"<<endl;
     for (int i = 0; i < n; i++)
     {
         cout<<arr[i]<<' ';
